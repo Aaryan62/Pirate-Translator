@@ -6,44 +6,83 @@
     margin: 0%;
     /* overflow: hidden; */
     font-family: 'Kalam', cursive;
+    color: white;
 }
+
 :root {
-    --yellow: #F2C94C;
+    --darkBrown: rgb(49, 21, 21);
     --black: #333333;
 }
 
 nav {
-    background-color: var(--yellow);
+    background-color: var(--darkBrown);
     text-align: center;
 }
-nav div{
+
+nav div {
     font-size: 2rem;
     padding: 1rem;
 }
 
-textarea{
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main div img {
+    height: 200px;
+    width: 200px;
+}
+
+.img {
+    transition: all 0.5s ease-in-out;
+}
+
+.img:hover {
+    transform: rotate(360deg);
+}
+
+@media only screen and (min-width:1200px) {
+
+    #img1 {
+        position: relative;
+        left: 200px;
+    }
+
+    #img2 {
+        position: relative;
+        right: 200px;
+    }
+
+}
+
+textarea {
+    color: black;
     width: 100%;
     min-height: 20vh;
     margin-top: 1rem;
     font-size: 20px;
-    padding: 1rem; 
+    padding: 1rem;
     font-family: inherit;
 }
+
 #output {
     border: 1px solid var(--black);
     width: 100%;
     min-height: 10vh;
     /* max-height: 20vh; */
     height: 20vh;
-    overflow : scroll;
-    padding: 1rem; 
+    overflow: scroll;
+    padding: 1rem;
     font-size: 20px;
     margin-top: 10px;
     text-align: left;
 }
 
-button{
-    background-color: var(--yellow);
+button {
+    background-color: var(--darkBrown);
     border: none;
     margin: 1rem 0rem;
     padding: 1rem 2rem;
@@ -53,9 +92,11 @@ button{
     font-size: 20px;
     cursor: pointer;
 }
-button:hover{
-   background-color: #d6a510;
+
+button:hover {
+    background-color: #d6a510;
 }
+
 .container {
     max-width: 600px;
     margin: auto;
@@ -68,7 +109,7 @@ footer {
     /* bottom: 0; */
     width: 100%;
     padding: 1rem;
-    background-color: var(--yellow);
+    background-color: var(--darkBrown);
     text-align: center;
 }
 
@@ -76,6 +117,7 @@ footer p {
     max-width: 600px;
     margin: auto;
 }
-footer div{
+
+footer div {
     font-size: x-large;
 }

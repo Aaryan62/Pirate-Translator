@@ -3,7 +3,7 @@ var btn_translate = document.getElementById("btn");
 var outputdiv = document.getElementById("output");
 
 
-var serverURL = "https://api.funtranslations.com/translate/minion.json";
+var serverURL = "https://api.funtranslations.com/translate/pirate.json";
 
 function translateURL(text){
     return serverURL  + "?" + "text=" + text;
