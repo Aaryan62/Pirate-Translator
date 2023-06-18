@@ -69,6 +69,7 @@ textarea {
 }
 
 #output {
+    color: black;
     border: 1px solid var(--black);
     width: 100%;
     min-height: 10vh;
