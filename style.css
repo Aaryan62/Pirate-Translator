@@ -95,7 +95,7 @@ button {
 }
 
 button:hover {
-    background-color: #d6a510;
+    background-color: rgb(107, 28, 28);
 }
 
 .container {
